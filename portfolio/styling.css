@@ -1,0 +1,168 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: white;
+}
+header
+{
+    height: 15%;
+    background: #030637
+}
+body
+{
+ height: 100%;
+ background: #000 ;   
+ margin: 0;
+ padding: 0;
+  align-items: center;
+}
+.goed
+{
+    color: white;
+    margin-left: 85%;
+    margin-top: 2%;
+
+}
+.overmij {
+    background-color: black;
+    border: none;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+  }
+  .opleiding{
+    background-color: black;
+    border: none;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+  }
+  .werk{
+    background-color: black;
+    border: none;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+  }
+
+main
+{
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+.text1 
+{
+    position: absolute;
+    right: 0;
+    width: 550px;
+    
+    bottom: 50%;
+    left: 50%;
+    font-size: 30px;
+}
+
+.bubbles{
+    position: relative;
+    display: flex;
+}
+.bubbles span
+{
+    position: relative;
+    height: 30px;
+    width: 30px;
+    background: #4fc3dc;
+    margin: 0 4px;
+    border-radius: 50%;
+    box-shadow: 0 0 0 10px #4fc3dc44,
+    0 0 50px #4fc3dc,
+    0 0 100px #4fc3dc;
+animation: animate 5s linear infinite;
+animation-duration: calc(100s / var(--i));
+}
+.bubbles span:nth-child(even)
+{
+    background: #ff2d75;
+    box-shadow: 0 0 0 10px #ff2d7544,
+    0 0 50px #ff2d75,
+    0 0 100px #ff2d75;  
+}
+@keyframes animate
+{
+    0%
+    {
+        transform: translateY(100vh) scale(0);
+    }
+    100%
+    {
+        transform: translateY(0vh) scale(1); 
+    }
+}
+footer
+{
+    height: 15%;
+    background-color: #030637;
+    margin-bottom: 0%;
+    padding: 1%;
+}
+/* Aanpassingen aan de .insta-klasse in je CSS */
+
+.insta 
+{
+    margin-left: 92%;
+    height: 1%; /* Pas de hoogte naar wens aan */
+    display: flex;
+    align-items: flex-end; /* Plaats het logo onderaan de container */
+}
+.whatsapp
+{
+    margin-left: 86%;
+    height: 0%; /* Pas de hoogte naar wens aan */
+    display: flex;
+    align-items: flex-end; /* Plaats het logo onderaan de container */
+
+    bottom: 50%;
+}
+
+.contact
+{
+    text-align: center;
+    font-size: 80px;
+}
+
+
+
+@keyframes slideInLeft {
+  from {
+transform: translateX(300px);
+    }
+
+to {
+transform: translateX(-800);
+    }
+}
+
+.m{
+    animation-name: slideInLeft ;
+    animation-duration: 3s ;
+    animation-timing-function: ease-in ;
+    animation-delay: 0s ;
+    animation-iteration-count:1;
+    animation-direction: normal ;
+    animation-fill-mode: none ;
+    height: 200px;
+    width: 200px;
+}
